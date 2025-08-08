@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chess Game</h1>
+        
+        <div class="menu">
+            <button id="newGameBtn">New Game</button>
+            <button id="helpBtn">Help</button>
+            <button id="exitBtn">Exit</button>
+        </div>
+        
+        <div class="chess-board" id="chessBoard"></div>
+        
+        <div class="game-info">
+            <div id="turnIndicator">White's turn</div>
+            <div id="moveHistory"></div>
+        </div>
+    </div>
+    
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Chess Game Rules</h2>
+            <div class="rules">
+                <h3>Basic Rules</h3>
+                <ul>
+                    <li>The player with white pieces always moves first.</li>
+                    <li>Each type of chess piece moves in a distinct way.</li>
+                    <li>The goal is to checkmate the opponent's king.</li>
+                </ul>
+                
+                <h3>Piece Movements</h3>
+                <ul>
+                    <li><strong>King</strong>: Moves one square in any direction.</li>
+                    <li><strong>Queen</strong>: Moves any number of squares diagonally, horizontally, or vertically.</li>
+                    <li><strong>Rook</strong>: Moves any number of squares horizontally or vertically.</li>
+                    <li><strong>Bishop</strong>: Moves any number of squares diagonally.</li>
+                    <li><strong>Knight</strong>: Moves in an L-shape (two squares in one direction, then one square perpendicular).</li>
+                    <li><strong>Pawn</strong>: Moves forward one square, captures diagonally. On first move, can move two squares.</li>
+                </ul>
+                
+                <h3>Special Moves</h3>
+                <ul>
+                    <li><strong>Castling</strong>: The king and rook can move simultaneously under certain conditions.</li>
+                    <li><strong>En Passant</strong>: A special pawn capture that can occur under specific circumstances.</li>
+                    <li><strong>Promotion</strong>: When a pawn reaches the opposite side, it can be promoted to any other piece (usually queen).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
